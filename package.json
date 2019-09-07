@@ -1,0 +1,40 @@
+{
+  "name": "e2e-test",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "api-test-vsts": "mocha -r ts-node/register e2e/tests/api-tests/**/*.spec.ts --opts ./mocha/mocha.vsts.opts",
+    "api-test-grep-vsts": "mocha -r ts-node/register --opts ./mocha/mocha.vsts.opts",
+    "api-test": "mocha -r ts-node/register e2e/tests/api-tests/**/*.spec.ts --opts ./mocha/mocha.dev.opts ",
+    "api-test-grep": "mocha -r ts-node/register --opts ./mocha/mocha.dev.opts "
+  },
+  "private": true,
+  "dependencies": {
+    "core-js": "^2.4.1",
+    "karma-es6-shim": "^1.0.0",
+    "rxjs": "^5.4.2"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.2.1",
+    "@types/chai-as-promised": "^7.1.2",
+    "@types/mocha": "^2.2.43",
+    "@types/node": "^6.0.89",
+    "@types/request": "^2.48.2",
+    "@types/request-promise": "^4.1.44",
+    "bluebird": "^3.5.1",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "codelyzer": "~3.1.1",
+    "colors": "^1.1.2",
+    "dotenv": "^4.0.0",
+    "mocha": "^4.0.1",
+    "mocha-junit-reporter": "^1.15.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "ts-node": "^3.2.2",
+    "tslint": "~5.3.2",
+    "tslint-no-unused-expression-chai": "0.0.3",
+    "typescript": "^2.9.2",
+    "yargs": "^10.0.3"
+  }
+}
